@@ -1,0 +1,41 @@
+
+
+<div class="panel panel-primary" id="panel">
+  <div class="panel-heading">
+    <p>Product List</p>
+  </div>
+  <div class="panel-body" id="body">
+    <p>Filter by:     <input type="text" name="search" placeholder="search here...." size="30" [(ngModel)]="listsearch"></p>
+    <h6>Filter by:{{listsearch}}</h6>
+    
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th><button class="btn btn-info btn-md" (click)="change()">{{a ? 'Show' : 'Hide'}} Image</button></th>
+          <th>Product</th>
+          <th>Code</th>
+          <th>Available</th>
+          <th>Price</th>
+          <th>5 Star Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of users  | ProductFilter:listsearch">
+          <td><div *ngIf="a"><img src="{{user.productImage}}"></div></td>
+          <td><a routerLink="/productlist/{{user.productId}}">{{user.product}}</a></td>
+          <td>{{user.code}}</td>
+          <td>{{user.available}}</td>
+          <td>{{user.price | currency : 'INR' : 'true'}}</td>
+          <td>
+            <div class="glyphicon glyphicon-star"></div>
+            <div class="glyphicon glyphicon-star"></div>
+            <div class="glyphicon glyphicon-star"></div>
+            <div class="glyphicon glyphicon-star"></div>
+            <div class="glyphicon glyphicon-star"></div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+</div>

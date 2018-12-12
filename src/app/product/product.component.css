@@ -1,0 +1,24 @@
+
+
+div#panel{
+    width: 950px;
+    height:500px;
+    margin: 100px auto;
+}
+div#body input{
+    margin-left: 100px;
+    border-radius: 2px;
+    height: 29px;
+}
+::-webkit-input-placeholder{
+    padding-left: 10px;
+}
+div#body h6{
+    margin-left: 160px;
+    margin-top: 13px;
+    font-size: 13px;   
+}
+img{
+    width: 100px;
+    height:45px;
+}

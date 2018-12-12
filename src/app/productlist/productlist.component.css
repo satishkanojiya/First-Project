@@ -1,0 +1,12 @@
+div#panel{
+    width:850px;
+    height:245px;
+    margin:100px auto;
+}
+img{
+    width:200px;
+    height:80px;
+}
+.btn{
+    color: white;
+}

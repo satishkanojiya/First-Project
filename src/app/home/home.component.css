@@ -1,0 +1,16 @@
+
+div#panel{
+    width:850px;
+    height:310px;
+    margin:100px auto;
+}
+div#body img{
+    width: 380px;
+    height: 180px;
+}
+div#heading{
+    height: 45px;
+}
+div#heading h3{
+    margin-top: 1px;
+}

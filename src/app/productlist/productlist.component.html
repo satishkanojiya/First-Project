@@ -1,0 +1,31 @@
+
+<div *ngIf="allproducts">
+<div class="panel panel-primary" id="panel">
+  <div class="panel-heading">
+    <p>Product List Details-{{allproducts.product}}</p>
+  </div>
+  <div class="panel-body">
+    
+    <table class="table table-hover">
+      
+      <tbody>
+        <tr>
+          <td><img src="{{allproducts.productImage}}"></td>
+          <td>{{allproducts.product}}</td>
+          <td>{{allproducts.code}}</td>
+          <td>{{allproducts.available}}</td>
+          <td>{{allproducts.price}}</td>
+          <td>{{allproducts.rating}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="panel-footer">
+      
+        <a routerLink="/Product" > <button type="button" class="btn btn-primary" >BACK</button></a>
+      
+    </div>
+    
+  </div>
+</div>
+</div>
